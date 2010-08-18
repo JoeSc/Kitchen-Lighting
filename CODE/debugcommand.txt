@@ -1,0 +1,1 @@
+/usr/local/bin/lpc21isp -verify -term  -control -RstDone  "/Users/joeschaack/Documents/XCODE STUFFS/ARM/TEST/firmware.hex" /dev/tty.usbserial* 115200  12000

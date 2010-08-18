@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 29
+/svn/!svn/ver/7/trunk/lpc1xxx
+END
+linkscript.ld
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/2/trunk/lpc1xxx/linkscript.ld
+END
+LPC11xx_handlers.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/7/trunk/lpc1xxx/LPC11xx_handlers.c
+END
+LPC1xxx_startup.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/2/trunk/lpc1xxx/LPC1xxx_startup.c
+END

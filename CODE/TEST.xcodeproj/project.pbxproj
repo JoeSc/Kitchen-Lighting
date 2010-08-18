@@ -1,0 +1,306 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		BC7FBBAC1215DFD9008893E4 /* Program */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = BC7FBBB01215DFF7008893E4 /* Build configuration list for PBXAggregateTarget "Program" */;
+			buildPhases = (
+				BC7FBBAB1215DFD9008893E4 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Program;
+			productName = Program;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXFileReference section */
+		8488F1EF0DD2F65700CF6459 /* makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = makefile; sourceTree = "<group>"; };
+		BC7FBB681215DD50008893E4 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		BC7FBB8A1215DE59008893E4 /* sysdefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sysdefs.h; sourceTree = "<group>"; };
+		BC7FBB8B1215DE59008893E4 /* lpc111x.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lpc111x.h; sourceTree = "<group>"; };
+		BC7FBB901215DE59008893E4 /* cpu_init.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cpu_init.h; sourceTree = "<group>"; };
+		BC7FBB911215DE59008893E4 /* cpu_init.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cpu_init.c; sourceTree = "<group>"; };
+		BC7FBD3212160C0B008893E4 /* lpc1xxx */ = {isa = PBXFileReference; lastKnownFileType = folder; path = lpc1xxx; sourceTree = "<group>"; };
+		BC7FBEA8121645B8008893E4 /* uart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uart.h; sourceTree = "<group>"; };
+		BC7FBEA9121645B8008893E4 /* uart.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = uart.c; sourceTree = "<group>"; };
+		BCFCA68A1217688600C6419C /* stdio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stdio.c; sourceTree = "<group>"; };
+		BCFCA68B1217688600C6419C /* string.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = string.c; sourceTree = "<group>"; };
+		BCFCA7B71217800500C6419C /* cmd_tbl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cmd_tbl.h; sourceTree = "<group>"; };
+		BCFCA7B81217800500C6419C /* commands.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = commands.c; sourceTree = "<group>"; };
+		BCFCA7C81217813B00C6419C /* cmd.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cmd.c; sourceTree = "<group>"; };
+		BCFCA7C91217813B00C6419C /* cmd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cmd.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* ¬´PROJECTNAME¬ª */ = {
+			isa = PBXGroup;
+			children = (
+				BCFCA7691217798F00C6419C /* Command Line interface */,
+				BCFCA6891217686E00C6419C /* libc */,
+				BC7FBEA7121645A9008893E4 /* uart */,
+				BC7FBD3212160C0B008893E4 /* lpc1xxx */,
+				BC7FBB8A1215DE59008893E4 /* sysdefs.h */,
+				BC7FBB8B1215DE59008893E4 /* lpc111x.h */,
+				BC7FBB901215DE59008893E4 /* cpu_init.h */,
+				BC7FBB911215DE59008893E4 /* cpu_init.c */,
+				8488F1EF0DD2F65700CF6459 /* makefile */,
+				BC7FBB681215DD50008893E4 /* main.c */,
+			);
+			name = "¬´PROJECTNAME¬ª";
+			sourceTree = "<group>";
+		};
+		BC7FBEA7121645A9008893E4 /* uart */ = {
+			isa = PBXGroup;
+			children = (
+				BC7FBEA8121645B8008893E4 /* uart.h */,
+				BC7FBEA9121645B8008893E4 /* uart.c */,
+			);
+			name = uart;
+			sourceTree = "<group>";
+		};
+		BCFCA6891217686E00C6419C /* libc */ = {
+			isa = PBXGroup;
+			children = (
+				BCFCA68A1217688600C6419C /* stdio.c */,
+				BCFCA68B1217688600C6419C /* string.c */,
+			);
+			name = libc;
+			sourceTree = "<group>";
+		};
+		BCFCA7691217798F00C6419C /* Command Line interface */ = {
+			isa = PBXGroup;
+			children = (
+				BCFCA7C81217813B00C6419C /* cmd.c */,
+				BCFCA7C91217813B00C6419C /* cmd.h */,
+				BCFCA7B71217800500C6419C /* cmd_tbl.h */,
+				BCFCA7B81217800500C6419C /* commands.c */,
+			);
+			name = "Command Line interface";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		0142E2590A37DAD800461F0A /* Clean */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION) clean";
+			buildConfigurationList = 0142E25A0A37DAD800461F0A /* Build configuration list for PBXLegacyTarget "Clean" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			dependencies = (
+			);
+			name = Clean;
+			passBuildSettingsInEnvironment = 1;
+			productName = Program;
+		};
+		01706F540A347F6900E43B08 /* Make Executable */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = 01706F550A347F8800E43B08 /* Build configuration list for PBXLegacyTarget "Make Executable" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			dependencies = (
+			);
+			name = "Make Executable";
+			passBuildSettingsInEnvironment = 1;
+			productName = Make;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 01706F350A34762900E43B08 /* Build configuration list for PBXProject "TEST" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 1;
+			mainGroup = 08FB7794FE84155DC02AAC07 /* ¬´PROJECTNAME¬ª */;
+			productRefGroup = 08FB7794FE84155DC02AAC07 /* ¬´PROJECTNAME¬ª */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				01706F540A347F6900E43B08 /* Make Executable */,
+				0142E2590A37DAD800461F0A /* Clean */,
+				BC7FBBAC1215DFD9008893E4 /* Program */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BC7FBBAB1215DFD9008893E4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here\nexit 0";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0142E25B0A37DAD800461F0A /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PATH = "/sw/bin/:/usr/local/bin/:$PATH";
+				PRODUCT_NAME = Clean;
+			};
+			name = Development;
+		};
+		0142E25C0A37DAD800461F0A /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				PRODUCT_NAME = Program;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		0142E25D0A37DAD800461F0A /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = Program;
+			};
+			name = Default;
+		};
+		01706F360A34762900E43B08 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Development;
+		};
+		01706F370A34762900E43B08 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Deployment;
+		};
+		01706F380A34762900E43B08 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Default;
+		};
+		01706F560A347F8800E43B08 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PATH = "/sw/bin/:/usr/local/bin/:$PATH";
+				PRODUCT_NAME = Make;
+			};
+			name = Development;
+		};
+		01706F570A347F8800E43B08 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				PRODUCT_NAME = Make;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		01706F580A347F8800E43B08 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = Make;
+			};
+			name = Default;
+		};
+		BC7FBBAD1215DFD9008893E4 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = Program;
+			};
+			name = Development;
+		};
+		BC7FBBAE1215DFD9008893E4 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = Program;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		BC7FBBAF1215DFD9008893E4 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = Program;
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0142E25A0A37DAD800461F0A /* Build configuration list for PBXLegacyTarget "Clean" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0142E25B0A37DAD800461F0A /* Development */,
+				0142E25C0A37DAD800461F0A /* Deployment */,
+				0142E25D0A37DAD800461F0A /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		01706F350A34762900E43B08 /* Build configuration list for PBXProject "TEST" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01706F360A34762900E43B08 /* Development */,
+				01706F370A34762900E43B08 /* Deployment */,
+				01706F380A34762900E43B08 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		01706F550A347F8800E43B08 /* Build configuration list for PBXLegacyTarget "Make Executable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01706F560A347F8800E43B08 /* Development */,
+				01706F570A347F8800E43B08 /* Deployment */,
+				01706F580A347F8800E43B08 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		BC7FBBB01215DFF7008893E4 /* Build configuration list for PBXAggregateTarget "Program" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC7FBBAD1215DFD9008893E4 /* Development */,
+				BC7FBBAE1215DFD9008893E4 /* Deployment */,
+				BC7FBBAF1215DFD9008893E4 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}
