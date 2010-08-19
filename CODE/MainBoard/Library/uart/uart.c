@@ -10,11 +10,14 @@
 #include "uart.h"
 #include "Library/init/cpu_init.h"
 
-
+   // Space holder if I decide to use and interrupt to handle the uart
+   // since the buffer is 14 bytes long the need mostlikely will never arise
 void UART_IRQHandler(void)
 {
 }
 
+
+   // Initialize the uart with the baud rate passed to it
 void uartInit(uint32_t baudrate)
 {
    uint32_t regVal, num;
@@ -48,10 +51,6 @@ void uartInit(uint32_t baudrate)
    UART_U0DLM = (num & 0xFF00) >> 8;
    UART_U0DLL = num & 0xFF;
    
-//   UART_U0DLM = 0x00; // for 38400 baud
-//   UART_U0DLL = 0x51;
-   
-   
    /* Set DLAB back to 0 */
    UART_U0LCR = (UART_U0LCR_Word_Length_Select_8Chars |
                  UART_U0LCR_Stop_Bit_Select_1Bits |
@@ -77,6 +76,9 @@ void uartInit(uint32_t baudrate)
    UART_U0TER = UART_U0TER_TXEN_Enabled;
 }
 
+   // Send a character throught the uart
+   // currently it waits for the buffer to be empty
+   // TODO: look into only waiting when the buffer is full
 void uartSend(char data)
 {
    while ( !(UART_U0LSR & UART_U0LSR_THRE) ); // sit and spin untill fifo is empty.  
@@ -85,12 +87,12 @@ void uartSend(char data)
    UART_U0THR = data;
 }
 
+   // returns 1 when valid data is in the receive buffer
 uint32_t uartDataAvailable()
 {
    return UART_U0LSR & UART_U0LSR_RDR_DATA;
 }
-
-
+   // read the data from the receive buffer
 char uartReceive()
 {
    return UART_U0RBR;

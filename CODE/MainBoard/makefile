@@ -54,7 +54,9 @@ endif
 
 CPU_TYPE = cortex-$(CORTEX_TYPE)
 VPATH += lpc1xxx
-OBJS += $(TARGET)_handlers.o LPC1xxx_startup.o Library/init/cpu_init.o Library/uart/uart.o Library/cli/cmd.o Library/cli/commands.o
+OBJS += $(TARGET)_handlers.o LPC1xxx_startup.o Library/init/cpu_init.o 
+OBJS += Library/uart/uart.o Library/cli/cmd.o Library/cli/commands.o
+OBJS += Library/pwm/pwm.o
 
 
 
@@ -125,4 +127,5 @@ program:all flash
 
 
 clean:
-	rm -f $(OBJS) $(LD_TEMP) $(OUTFILE).elf $(OUTFILE).bin $(OUTFILE).hex
+	rm -f $(OBJS) $(LD_TEMP) $(OUTFILE).elf $(OUTFILE).bin $(OUTFILE).hex debugcommand.txt
+ 

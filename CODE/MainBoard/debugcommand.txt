@@ -1,1 +1,1 @@
-/usr/local/bin/lpc21isp -verify -term  -control -RstDone  "/Users/joeschaack/Documents/git/Kitchen-Lighting/CODE/firmware.hex" /dev/tty.usbserial* 115200  12000
+/usr/local/bin/lpc21isp -verify -term  -control -RstDone  "/Users/joeschaack/Documents/git/Kitchen-Lighting/CODE/MainBoard/firmware.hex" /dev/tty.usbserial* 115200  12000

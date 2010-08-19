@@ -16,15 +16,15 @@
 #include "Library/init/cpu_init.h"
 #include "Library/uart/uart.h"
 #include "Library/cli/cmd.h"
+#include "lpc111x.h"
    //#define CLKOUT
-
+#include "Library/pwm/pwm.h"
 
 
 int main (void)
 {
    cpuInit();
    uartInit(BAUDRATE);
-
    
 #ifdef CLKOUT
    IOCON_PIO0_1 &= ~(0x3f);
@@ -40,55 +40,24 @@ int main (void)
    
 #endif   
    
-   
-   
-
+      //initPWM(16, 0, (1<<0), 256, 0);
    printf("Starting in main\n");
    cmdInit();
 
    while (1)
    {
       cmdPoll();
-
-      
-//      Delay(1);
-//      GPIO_GPIO3DATA ^= (1<<3);
-//      while(uartDataAvailable())
-//      {
-//         printf("i got : %c   Time is %d \n",uartReceive(),millis());
-//         int i;
-//         for (i='a'; i<'z'; i++) 
-//         {
-//            uartSend(i);
-//            uartSend("\n");
-//         }
-//      }
    }
 }
 
 
 
-/**************************************************************************/
-/*! 
- @brief Sends a single byte over UART.
- 
- @param[in]  byte
- Byte value to send
- */
-/**************************************************************************/
+
+
 void __putchar(const char c)
 {
    uartSend(c);
 }
-
-/**************************************************************************/
-/*! 
- @brief Sends a single byte over UART.
- 
- @param[in]  byte
- Byte value to send
- */
-/**************************************************************************/
 int puts(const char * str)
 {
    while(*str) __putchar(*str++);

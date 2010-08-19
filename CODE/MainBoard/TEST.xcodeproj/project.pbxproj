@@ -21,68 +21,112 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXFileReference section */
-		8488F1EF0DD2F65700CF6459 /* makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = makefile; sourceTree = "<group>"; };
-		BC7FBB681215DD50008893E4 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		BC7FBB8A1215DE59008893E4 /* sysdefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sysdefs.h; sourceTree = "<group>"; };
-		BC7FBB8B1215DE59008893E4 /* lpc111x.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lpc111x.h; sourceTree = "<group>"; };
-		BC7FBB901215DE59008893E4 /* cpu_init.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cpu_init.h; sourceTree = "<group>"; };
-		BC7FBB911215DE59008893E4 /* cpu_init.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cpu_init.c; sourceTree = "<group>"; };
-		BC7FBD3212160C0B008893E4 /* lpc1xxx */ = {isa = PBXFileReference; lastKnownFileType = folder; path = lpc1xxx; sourceTree = "<group>"; };
-		BC7FBEA8121645B8008893E4 /* uart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uart.h; sourceTree = "<group>"; };
-		BC7FBEA9121645B8008893E4 /* uart.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = uart.c; sourceTree = "<group>"; };
-		BCFCA68A1217688600C6419C /* stdio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stdio.c; sourceTree = "<group>"; };
-		BCFCA68B1217688600C6419C /* string.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = string.c; sourceTree = "<group>"; };
-		BCFCA7B71217800500C6419C /* cmd_tbl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cmd_tbl.h; sourceTree = "<group>"; };
-		BCFCA7B81217800500C6419C /* commands.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = commands.c; sourceTree = "<group>"; };
-		BCFCA7C81217813B00C6419C /* cmd.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cmd.c; sourceTree = "<group>"; };
-		BCFCA7C91217813B00C6419C /* cmd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cmd.h; sourceTree = "<group>"; };
+		BCED7CCE121CBF7D00A16C08 /* cmd.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cmd.c; sourceTree = "<group>"; };
+		BCED7CCF121CBF7D00A16C08 /* cmd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cmd.h; sourceTree = "<group>"; };
+		BCED7CD0121CBF7D00A16C08 /* cmd_tbl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cmd_tbl.h; sourceTree = "<group>"; };
+		BCED7CD1121CBF7D00A16C08 /* commands.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = commands.c; sourceTree = "<group>"; };
+		BCED7CD3121CBF7D00A16C08 /* cpu_init.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cpu_init.c; sourceTree = "<group>"; };
+		BCED7CD4121CBF7D00A16C08 /* cpu_init.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cpu_init.h; sourceTree = "<group>"; };
+		BCED7CD7121CBF7D00A16C08 /* stdio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stdio.c; sourceTree = "<group>"; };
+		BCED7CD8121CBF7D00A16C08 /* string.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = string.c; sourceTree = "<group>"; };
+		BCED7CD9121CBF7D00A16C08 /* uart.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = uart.c; sourceTree = "<group>"; };
+		BCED7CDA121CBF7D00A16C08 /* uart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uart.h; sourceTree = "<group>"; };
+		BCED7CDC121CBF7D00A16C08 /* linkscript.ld */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linkscript.ld; sourceTree = "<group>"; };
+		BCED7CDD121CBF7D00A16C08 /* LPC11xx_handlers.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = LPC11xx_handlers.c; sourceTree = "<group>"; };
+		BCED7CDE121CBF7D00A16C08 /* LPC1xxx_startup.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = LPC1xxx_startup.c; sourceTree = "<group>"; };
+		BCED7CDF121CBF7D00A16C08 /* sysdefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sysdefs.h; sourceTree = "<group>"; };
+		BCED7CE0121CBF7D00A16C08 /* lpc111x.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lpc111x.h; sourceTree = "<group>"; };
+		BCED7CE1121CBF7D00A16C08 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		BCED7CE2121CBF7D00A16C08 /* makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = makefile; sourceTree = "<group>"; };
+		BCED7CE3121CBF8D00A16C08 /* adc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = adc.h; sourceTree = "<group>"; };
+		BCED7CE4121CBF8D00A16C08 /* adc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = adc.c; sourceTree = "<group>"; };
+		BCED7CE5121CBFA500A16C08 /* pwm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pwm.h; sourceTree = "<group>"; };
+		BCED7CE6121CBFA500A16C08 /* pwm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pwm.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		08FB7794FE84155DC02AAC07 /* ¬´PROJECTNAME¬ª */ = {
 			isa = PBXGroup;
 			children = (
-				BCFCA7691217798F00C6419C /* Command Line interface */,
-				BCFCA6891217686E00C6419C /* libc */,
-				BC7FBEA7121645A9008893E4 /* uart */,
-				BC7FBD3212160C0B008893E4 /* lpc1xxx */,
-				BC7FBB8A1215DE59008893E4 /* sysdefs.h */,
-				BC7FBB8B1215DE59008893E4 /* lpc111x.h */,
-				BC7FBB901215DE59008893E4 /* cpu_init.h */,
-				BC7FBB911215DE59008893E4 /* cpu_init.c */,
-				8488F1EF0DD2F65700CF6459 /* makefile */,
-				BC7FBB681215DD50008893E4 /* main.c */,
+				BCED7CCB121CBF7D00A16C08 /* Library */,
+				BCED7CDB121CBF7D00A16C08 /* lpc1xxx */,
+				BCED7CE0121CBF7D00A16C08 /* lpc111x.h */,
+				BCED7CE1121CBF7D00A16C08 /* main.c */,
+				BCED7CE2121CBF7D00A16C08 /* makefile */,
 			);
 			name = "¬´PROJECTNAME¬ª";
 			sourceTree = "<group>";
 		};
-		BC7FBEA7121645A9008893E4 /* uart */ = {
+		BCED7CCB121CBF7D00A16C08 /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				BC7FBEA8121645B8008893E4 /* uart.h */,
-				BC7FBEA9121645B8008893E4 /* uart.c */,
+				BCED7CCC121CBF7D00A16C08 /* adc */,
+				BCED7CCD121CBF7D00A16C08 /* cli */,
+				BCED7CD2121CBF7D00A16C08 /* init */,
+				BCED7CD5121CBF7D00A16C08 /* pwm */,
+				BCED7CD6121CBF7D00A16C08 /* uart */,
 			);
-			name = uart;
+			path = Library;
 			sourceTree = "<group>";
 		};
-		BCFCA6891217686E00C6419C /* libc */ = {
+		BCED7CCC121CBF7D00A16C08 /* adc */ = {
 			isa = PBXGroup;
 			children = (
-				BCFCA68A1217688600C6419C /* stdio.c */,
-				BCFCA68B1217688600C6419C /* string.c */,
+				BCED7CE3121CBF8D00A16C08 /* adc.h */,
+				BCED7CE4121CBF8D00A16C08 /* adc.c */,
 			);
-			name = libc;
+			path = adc;
 			sourceTree = "<group>";
 		};
-		BCFCA7691217798F00C6419C /* Command Line interface */ = {
+		BCED7CCD121CBF7D00A16C08 /* cli */ = {
 			isa = PBXGroup;
 			children = (
-				BCFCA7C81217813B00C6419C /* cmd.c */,
-				BCFCA7C91217813B00C6419C /* cmd.h */,
-				BCFCA7B71217800500C6419C /* cmd_tbl.h */,
-				BCFCA7B81217800500C6419C /* commands.c */,
+				BCED7CCE121CBF7D00A16C08 /* cmd.c */,
+				BCED7CCF121CBF7D00A16C08 /* cmd.h */,
+				BCED7CD0121CBF7D00A16C08 /* cmd_tbl.h */,
+				BCED7CD1121CBF7D00A16C08 /* commands.c */,
 			);
-			name = "Command Line interface";
+			path = cli;
+			sourceTree = "<group>";
+		};
+		BCED7CD2121CBF7D00A16C08 /* init */ = {
+			isa = PBXGroup;
+			children = (
+				BCED7CD3121CBF7D00A16C08 /* cpu_init.c */,
+				BCED7CD4121CBF7D00A16C08 /* cpu_init.h */,
+			);
+			path = init;
+			sourceTree = "<group>";
+		};
+		BCED7CD5121CBF7D00A16C08 /* pwm */ = {
+			isa = PBXGroup;
+			children = (
+				BCED7CE5121CBFA500A16C08 /* pwm.h */,
+				BCED7CE6121CBFA500A16C08 /* pwm.c */,
+			);
+			path = pwm;
+			sourceTree = "<group>";
+		};
+		BCED7CD6121CBF7D00A16C08 /* uart */ = {
+			isa = PBXGroup;
+			children = (
+				BCED7CD7121CBF7D00A16C08 /* stdio.c */,
+				BCED7CD8121CBF7D00A16C08 /* string.c */,
+				BCED7CD9121CBF7D00A16C08 /* uart.c */,
+				BCED7CDA121CBF7D00A16C08 /* uart.h */,
+			);
+			path = uart;
+			sourceTree = "<group>";
+		};
+		BCED7CDB121CBF7D00A16C08 /* lpc1xxx */ = {
+			isa = PBXGroup;
+			children = (
+				BCED7CDC121CBF7D00A16C08 /* linkscript.ld */,
+				BCED7CDD121CBF7D00A16C08 /* LPC11xx_handlers.c */,
+				BCED7CDE121CBF7D00A16C08 /* LPC1xxx_startup.c */,
+				BCED7CDF121CBF7D00A16C08 /* sysdefs.h */,
+			);
+			path = lpc1xxx;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
