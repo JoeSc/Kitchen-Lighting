@@ -8,7 +8,7 @@
  */
 
 #include "lpc111x.h"
-#include "sysdefs.h"
+#include "lpc1xxx/sysdefs.h"
 
 #ifndef _uart_H_
 #define _uart_H_

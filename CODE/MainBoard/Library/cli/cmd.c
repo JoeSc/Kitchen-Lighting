@@ -48,9 +48,9 @@
 */
 /**************************************************************************/
 
-#include <stdio.h>
-#include <string.h>
-#include <uart.h>
+#include "stdio.h"
+#include "string.h"
+#include "Library/uart/uart.h"
 #include "cmd.h"
 #include "cmd_tbl.h"
 

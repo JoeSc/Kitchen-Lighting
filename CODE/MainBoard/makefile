@@ -54,7 +54,7 @@ endif
 
 CPU_TYPE = cortex-$(CORTEX_TYPE)
 VPATH += lpc1xxx
-OBJS += $(TARGET)_handlers.o LPC1xxx_startup.o cpu_init.o uart.o cmd.o commands.o
+OBJS += $(TARGET)_handlers.o LPC1xxx_startup.o Library/init/cpu_init.o Library/uart/uart.o Library/cli/cmd.o Library/cli/commands.o
 
 
 

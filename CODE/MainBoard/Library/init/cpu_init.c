@@ -10,7 +10,7 @@ volatile uint32_t ledTicks;
 void SysTick_Handler (void)
 {
 	msTicks++;
-   ledTicks++;
+   ledTicks++;			// TODO add this to the if statement 
 
 	if(ledTicks > SYSTICK_LED_MS)
  	{

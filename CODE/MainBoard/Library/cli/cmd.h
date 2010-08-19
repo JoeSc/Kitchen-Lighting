@@ -40,7 +40,7 @@
 #define __CMD_H__
 
 #include "lpc111x.h"
-#include "sysdefs.h"
+//#include "lpc1xxx/sysdefs.h"
 
 typedef struct
 {

@@ -11,8 +11,7 @@
 #ifndef _LPC111X_H_
 #define _LPC111X_H_
 
-#include "sysdefs.h"
-//#include "projectconfig.h"
+#include "lpc1xxx/sysdefs.h"
 
 /*##############################################################################
 ## System Control Block

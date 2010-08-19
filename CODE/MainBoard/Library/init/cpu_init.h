@@ -3,7 +3,7 @@
    
 */
 #include "lpc111x.h"
-#include "sysdefs.h"
+#include "lpc1xxx/sysdefs.h"
 #ifndef _CPU_H_
 #define _CPU_H_
 

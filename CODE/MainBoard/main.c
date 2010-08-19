@@ -2,6 +2,7 @@
  *  main.c
  *  Test1
  *
+ *
  *  Created by Joe  Schaack on 8/13/10.
  *  Copyright 2010 __MyCompanyName__. All rights reserved.
  *
@@ -11,10 +12,10 @@
 
 
    //THE COMMAND LINE INTERFACE FROM MICROBUILDER.DE LOOKS INTERESETING ...
-#include <stdio.c>
-#include <cpu_init.h>
-#include <uart.h>
-#include <cmd.h>
+#include "Library/uart/stdio.c"
+#include "Library/init/cpu_init.h"
+#include "Library/uart/uart.h"
+#include "Library/cli/cmd.h"
    //#define CLKOUT
 
 

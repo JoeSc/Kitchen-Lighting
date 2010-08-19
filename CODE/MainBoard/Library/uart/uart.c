@@ -8,7 +8,7 @@
  */
 
 #include "uart.h"
-#include "cpu_init.h"
+#include "Library/init/cpu_init.h"
 
 
 void UART_IRQHandler(void)

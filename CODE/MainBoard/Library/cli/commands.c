@@ -43,10 +43,10 @@
  */
 /**************************************************************************/
 
-#include <stdio.h>
-#include <string.h>   // memset
-#include <ctype.h>    // isdigit, isspace, etc.
-#include <cpu_init.h>
+#include "stdio.h"
+#include "string.h"   // memset
+#include <ctype.h>   // isdigit, isspace, etc.
+#include "Library/init/cpu_init.h"
 
 #include "cmd.h"
 
