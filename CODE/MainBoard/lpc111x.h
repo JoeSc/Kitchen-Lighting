@@ -2950,7 +2950,7 @@ static inline void NVIC_DisableIRQ(IRQn_t IRQn)
     includes the data, DONE, and Overrun flags, and the number of the A/D channel to which
     the data relates. */
 
-#define ADC_AD0GDR                                ((unsigned int) 0x4001C004)
+#define ADC_AD0GDR                                (*(pREG32 (0x4001C004)))
 #define ADC_AD0GDR_RESULT_MASK                    (0x0000FFC0)
 #define ADC_AD0GDR_CHN_MASK                       (0x07000000)    // Channel from which the results were converted
 #define ADC_AD0GDR_OVERUN_MASK                    (0x40000000)
@@ -2964,7 +2964,7 @@ static inline void NVIC_DisableIRQ(IRQn_t IRQn)
     are mirrored in ADSTAT. The interrupt flag (the logical OR of all DONE flags) is also found
     in ADSTAT.  */
 
-#define ADC_AD0STAT                               ((unsigned int) 0x4001C030)
+#define ADC_AD0STAT                               (*(pREG32 (0x4001C030)))
 #define ADC_AD0STAT_DONE0_MASK                    (0x00000001)
 #define ADC_AD0STAT_DONE0                         (0x00000001)
 #define ADC_AD0STAT_DONE1_MASK                    (0x00000002)
@@ -3007,7 +3007,7 @@ static inline void NVIC_DisableIRQ(IRQn_t IRQn)
     results are read by the application program whenever they are needed. In this case, an
     interrupt is not desirable at the end of each conversion for some A/D channels.  */
 
-#define ADC_AD0INTEN                              ((unsigned int) 0x4001C00C)   // ADC Interrupt Enable Register
+#define ADC_AD0INTEN                              (*(pREG32 (0x4001C00C)))   // ADC Interrupt Enable Register
 #define ADC_AD0INTEN_ADINTEN0_MASK                (0x00000001)
 #define ADC_AD0INTEN_ADINTEN0                     (0x00000001)
 #define ADC_AD0INTEN_ADINTEN1_MASK                (0x00000002)

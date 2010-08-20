@@ -56,19 +56,8 @@ void cmd_md(uint8_t argc, char **argv);
 void cmd_mw(uint8_t argc, char **argv);
 void cmd_pwmInit(uint8_t argc, char **argv);
 void cmd_pwmSet(uint8_t argc, char **argv);
-
-#ifdef CFG_CHIBI
-void cmd_chibi_addr(uint8_t argc, char **argv);
-void cmd_chibi_ieeeaddr(uint8_t argc, char **argv);
-void cmd_chibi_tx(uint8_t argc, char **argv);
-#endif
-#ifdef CFG_I2CEEPROM
-void cmd_i2ceeprom_read(uint8_t argc, char **argv);
-void cmd_i2ceeprom_write(uint8_t argc, char **argv);
-#endif
-#ifdef CFG_LM75B
-void cmd_lm75b_gettemp(uint8_t argc, char **argv);
-#endif
+void cmd_adcInit( uint8_t argc, char **argv);
+void cmd_adcRead( uint8_t argc, char **argv);
 
 
 
@@ -91,6 +80,8 @@ cmd_t cmd_tbl[] =
    { "mw",2,2,cmd_mw, "Writes to Memory", "'mw' [address] [data]"},
    { "pwminit",4,4,cmd_pwmInit,"Inits PWM" , "'pwminit' [32/16] [num] [ENmask] [period]"},
    { "pwmset" ,4,4,cmd_pwmSet,"Sets PWM val" , "'pwmset' [32/16] [num] [chn] [val]"},
+   { "adcinit",1,1,cmd_adcInit,"Inits ADC Channel" , "'adcinit' Channel"},
+   { "adcread",1,1,cmd_adcRead,"Reads ADC Channel" , "'adcread' Channel"},
    { "sysinfo",        0, 0,   cmd_sysinfo           , "Displays current system configuration settings"      , "'sysinfo' has no parameters" },
    
 

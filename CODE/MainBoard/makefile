@@ -56,7 +56,7 @@ CPU_TYPE = cortex-$(CORTEX_TYPE)
 VPATH += lpc1xxx
 OBJS += $(TARGET)_handlers.o LPC1xxx_startup.o Library/init/cpu_init.o 
 OBJS += Library/uart/uart.o Library/cli/cmd.o Library/cli/commands.o
-OBJS += Library/pwm/pwm.o
+OBJS += Library/pwm/pwm.o Library/adc/adc.o
 
 
 

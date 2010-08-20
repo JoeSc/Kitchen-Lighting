@@ -48,6 +48,7 @@
 #include <ctype.h>   // isdigit, isspace, etc.
 #include "Library/init/cpu_init.h"
 #include "Library/pwm/pwm.h"
+#include "Library/adc/adc.h"
 
 #include "cmd.h"
 
@@ -296,7 +297,7 @@ void cmd_pwmInit(uint8_t argc, char **argv)
       return 0;
    if(!getNumber(argv[3], &period))
       return 0;
-   printf("Setting timer%dB%d mat%d to period of %d", whichtimer,timernum,enablemask,period);
+   printf("Setting timer%dB%d mat 0x%X to period of %d\n", whichtimer,timernum,enablemask,period);
    initPWM(whichtimer, timernum, enablemask, period, 0  );
 }
 
@@ -314,6 +315,27 @@ void cmd_pwmSet(uint8_t argc, char **argv)
    if(!getNumber(argv[3], &period))
       return 0;
    setPWM(whichtimer, timernum, enablemask, period)   ;
+   printf("<#message#>");
+}
+
+void cmd_adcInit( uint8_t argc, char **argv)
+{
+   uint32_t chn;
+   if (!getNumber(argv[0], &chn))
+      return 0;
+   
+   InitADC(1<<chn);
+   printf("ADC chn %d inited\n",chn);
+   
+}
+   
+void cmd_adcRead( uint8_t argc, char **argv)
+{
+   uint32_t chn;
+   if (!getNumber(argv[0], &chn))
+      return 0;
+   
+   printf("Read ADC ch.%d  Got value of %d",chn, getAnalog(1<<chn));
 }
 
 

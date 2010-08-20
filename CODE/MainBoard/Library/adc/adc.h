@@ -7,3 +7,6 @@
  *
  */
 
+   //void InitADC (uint8_t bitmask);
+   //uint32_t getAnalog (uint32_t chn);
+  //

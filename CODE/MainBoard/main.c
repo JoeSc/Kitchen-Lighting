@@ -19,6 +19,7 @@
 #include "lpc111x.h"
    //#define CLKOUT
 #include "Library/pwm/pwm.h"
+#include "Library/adc/adc.h"
 
 
 int main (void)
